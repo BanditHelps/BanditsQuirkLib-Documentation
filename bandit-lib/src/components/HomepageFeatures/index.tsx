@@ -11,32 +11,32 @@ type FeatureItem = {
 
 const FeatureList: FeatureItem[] = [
   {
-    title: 'Easy to Use',
+    title: 'Core Systems',
     Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        Document shared mechanics like stamina, progression, and combat rules in
+        one place.
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
+    title: 'Abilities',
     Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        Keep every ability clear with activation details, cooldowns, scaling,
+        and usage examples.
       </>
     ),
   },
   {
-    title: 'Powered by React',
+    title: 'Quirks',
     Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        Track each quirk&apos;s identity, unlock flow, ability set, and balancing
+        notes.
       </>
     ),
   },
