@@ -14,11 +14,12 @@ const config: Config = {
     v4: true, // Improve compatibility with the upcoming Docusaurus v4
   },
 
-  url: 'https://BanditHelps.github.io',
+  url: 'https://bandithelps.github.io',
   baseUrl: '/BanditsQuirkLib-Documentation/',
 
-  organizationName: 'BanditHelps',
+  organizationName: 'bandithelps',
   projectName: 'BanditsQuirkLib-Documentation',
+  trailingSlash: false,
 
   onBrokenLinks: 'throw',
 
