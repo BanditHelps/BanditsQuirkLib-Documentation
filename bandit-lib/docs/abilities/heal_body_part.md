@@ -1,33 +1,33 @@
 ---
-sidebar_position: 3
+sidebar_position: 4
 ---
 
-# DamageBodyPart
+# HealBodyPart
 
-**Ability Type |** `yha:damage_body_part`
+**Ability Type |** `yha:heal_body_part`
 
-The Damage Body Part ability allows developers to apply damage to one or more body parts. This ability runs **every tick that it is enabled**, so be careful.
+The Heal Body Part ability allows developers to recover health to one or more body parts. Similar to the [DamageBodyPart](./damage_body_part.md) Ability, this ability runs **every tick that it is enabled**.
 
 
 ## Config Values
 | Property      | Description | Default Value | Data Type|
 | ----------- | ----------- | ----------- | ----------- |
-| damage      | This value is how much damage to apply. The value must be **non-negative**, otherwise this ability will do nothing.       |    2.0         | [Value]           |
+| heal_amount      | This value is how much healing to apply. The value must be **non-negative**, otherwise this ability will do nothing.       |    2.0         | [Value]           |
 | parts   | This property accepts an array of body parts to apply the damage to. If more than one part is specified, all parts are damaged equally. <br></br> **Expects: "head" \| "chest" \| "left_arm" \| "right_arm" \| "left_hand" \| "right_hand" \| "left_leg" \| "right_leg" \| "left_foot" \| "right_foot" \| "main_arm" \| "off_arm"**       |    "chest"         |   String[]          |
 
 ## Examples
 
-### Single-Part Damage
+### Single-Part Healing
 
 ```json
-"hand_sprain": {
-    "type": "yha:damage_body_part",
-    "damage": 10.0,
+"mend_arm": {
+    "type": "yha:heal_body_part",
+    "damage": 50.0,
     "parts": [
-        "right_hand"
+        "main_hand"
     ],
     "properties": {
-        "title": "Hurt Hand",
+        "title": "Mend Hand",
         "icon": "minecraft:wooden_sword",
         "hidden_in_bar": false
     },
@@ -41,11 +41,11 @@ The Damage Body Part ability allows developers to apply damage to one or more bo
 }
 ```
 
-### Multi-Part Damage
+### Multi-Part Healing
 ```json
-"whole_body_contusion": {
-    "type": "yha:damage_body_part",
-    "damage": 5.0,
+"full_heal": {
+    "type": "yha:heal_body_part",
+    "damage": 100.0,
     "parts": [
         "chest",
         "head",
@@ -55,8 +55,8 @@ The Damage Body Part ability allows developers to apply damage to one or more bo
         "left_leg",
     ],
     "properties": {
-        "title": "Full Body Damage",
-        "icon": "minecraft:netherite_sword",
+        "title": "Full Heal",
+        "icon": "minecraft:netherite_chestplate",
         "hidden_in_bar": false
     },
     "state": {
