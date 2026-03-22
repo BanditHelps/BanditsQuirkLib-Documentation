@@ -1,5 +1,5 @@
 ---
-sidebar_position: 2
+sidebar_position: 3
 ---
 
 # Dash
@@ -13,7 +13,7 @@ An important note about the dash is that it operates differently whether the pla
 ## Config Values
 | Property      | Description | Default Value | Data Type|
 | ----------- | ----------- | ----------- | ----------- |
-| strength      | This corresponds to the speed and distance the dash will have upon use. The higher the value, the further the dash. Making this value negative will change the direction. **THIS IS NOT THE NUMBER OF BLOCKS THAT THE PLAYER MOVES**.       |    2.0         | [Value]           |
+| strength      | This corresponds to the speed and distance the dash will have upon use. The higher the value, the further the dash. Making this value negative will change the direction. <br></br> **THIS IS NOT THE NUMBER OF BLOCKS THAT THE PLAYER MOVES**.       |    2.0         | [Value]           |
 | block_vertical   | This value will determine whether or not the player can dash in a vertical direction direction or not. Setting this to true will allow them to dash into the air, similar to a leap. Keeping it false locks movement to the horizontal axis only.       |    true         |   Boolean          |
 
 ## Examples
