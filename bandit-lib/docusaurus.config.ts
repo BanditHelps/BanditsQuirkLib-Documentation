@@ -15,10 +15,10 @@ const config: Config = {
   },
 
   url: 'https://bandithelps.github.io',
-  baseUrl: '/BanditsQuirkLib-Documentation/',
+  baseUrl: '/YourHeroAcademia-Documentation/',
 
   organizationName: 'bandithelps',
-  projectName: 'BanditsQuirkLib-Documentation',
+  projectName: 'YourHeroAcademia-Documentation',
   trailingSlash: false,
 
   onBrokenLinks: 'throw',
